@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script>
+    </script>
+
+    <style>
+        {% comment %} img-under{
+            opacity: 0.5;
+        } {% endcomment %}
+        .over-block {
+            position: relative;
+            max-width: 800px; 
+            margin: 0 auto; 
+          }
+          
+          .over-block .over-content {
+            position: absolute; 
+            bottom: 0; 
+            background: rgb(191, 177, 196, 0.85); 
+            color: #54445a; 
+            width: 60%; 
+            padding: 20px; 
+            font-size:14px;
+          }
+          .middle-block{
+            background:#66615c;
+            color:white;
+          }
+    </style>
+</head>
+
+<body>
+    <h1>Who we are.</h1>
+    <br><br>
+    <div class="over-block">
+        <img src="{% static 'core/marvin-meyer-SYTO3xs06fU-unsplash.jpg' %}" alt="five open laptops at a work table with things including tea, water, cereal, headphones and mobile phones" width="120%" height="auto">
+        <div class="over-content">
+            <p><b>Vital Tech Lab is a boutique consulting company 
+                founded in San Jose, California in 2023. 
+                We are about vitality for people who work in technology. 
+                We are interested in the well-being of teams and individuals 
+                through training and development. We focus on person-to-person 
+                interactions within technology spaces.
+            </b></p>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="middle-block" style="">
+        <p>All about everyone winning through listening and communication
+    	</p>
+    	<p>
+    	Ginger Greenfield is co-founder of Vital Tech Lab. She graduated magna cum Laude 
+    	from Cornell University and did graduate work at University of California, Santa 
+    	Barbara and the University of Oxford. Greenfield is based in Washington, D.C. 
+    	<a href="mailto:ginger@vitaltechlab.com">ginger@vitaltechlab.com</a>
+    	</p>
+    	<p> 
+    	Dawn Goodnight is co-founder of Vital Tech Lab. She graduated with a Master of 
+    	Science degree in Computer Science from University of Michigan-Flint and with a 
+    	Bachelor of Arts degree in Communication. She is excited about communicating 
+    	with humor and lightness, friends, and fitness. Goodnight is based in San Jose, 
+    	California. <a href="mailto:dawn@vitaltechlab.com">dawn@vitaltechlab.com</a>
+    	</p>
+    	<p>Together they knew they could make a big impact and have people succeed 
+    	all around them.
+    	</p>
+    </div>    
+
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
+
+{% endblock %}
